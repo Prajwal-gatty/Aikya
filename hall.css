@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+  
+}
+
+header {
+    background-color: #e0a089;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+      background-size: cover;
+   background-position: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 20px;
+    ;
+    color: #efeded;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.services {
+    background-color: #f5e8e2;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(245, 242, 242, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.services .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-style: italic;
+    color: #15130e;
+}
+
+.search {
+    background-color: #130606;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+   
+}
+
+.search-box {
+    display: inline-block;
+    background-color: #111110;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    margin-left: 300px;
+    margin-right: 50px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    width: calc(100% - 40px);
+}
+
+button {
+    background-color: #f3ede7;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #efebe9;
+}
+
+
+.hall-button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    width: 30%;
+}
+.hall-button fa-solid{
+    width: 25px;
+    color: #fffaf5;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.search-pooja-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.category-dropdown {
+    padding: 10px;
+    border: 1px solid #f4f4ed;
+    border-radius: 5px;
+    background-color: #fbfbf6;
+    width: 200px;
+    margin-left: 10px;
+}
+
+/* Style for the dropdown options */
+.category-dropdown option {
+    padding: 5px 10px;
+}
+
+.form-box{
+    color: #fff;
+}
+.booking-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1ebea;
+
+    
+}
+
+.booking-form .form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #f5f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(249, 249, 245, 0.975);
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/hall\ pic.png');
+    background-size: cover;
+    background-position: center;    
+    
+}
+
+.form-container h2{
+    text-align: center;
+}
+
+.booking-form .form-group {
+    margin-bottom: 20px;
+    
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="tel"],
+.booking-form input[type="date"],
+.booking-form input[type="number"],
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f1ebeb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6dea8;
+    color: #100f0e;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #edac77;
+}
+
+
+.error{
+    width: 92%; 
+    margin: 0px auto; 
+    padding: 10px; 
+    border: 1px solid #a94442; 
+    color: #a94442; 
+    background: #f2dede; 
+    border-radius: 5px; 
+    text-align: left;
+    }
