@@ -12,8 +12,10 @@ if (isset($_SESSION['loggedin'])) {
             exit();
         }
     } else {
-        header('location: ' . BASE_URL . 'login.php');
-        exit();
+        if (basename($_SERVER['REQUEST_URI']) != 'login.php') {
+            header('location: ' . BASE_URL . '/login.php');
+            exit();
+        }
     }
 } else {
     if (basename($_SERVER['REQUEST_URI']) == 'login.php') {
