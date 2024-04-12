@@ -93,8 +93,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
 }
+
+
 /* Dropdown container */
 .dropdown {
     position: relative;
@@ -149,7 +151,7 @@ main {
     align-items: flex-start;
     margin: 0;
     padding: 100px;
-    background-image: url(images/mandala\ backgorund.jpg);
+    background-image: url(images/welcome8.jpg);
     
     background-size: cover;
     background-position: center; 
@@ -166,7 +168,7 @@ main {
 .hero .container h1 {
     margin-bottom: 10px;
     font-size: 3em;
-    color: #050000;
+    color: #f4ed34;
 }
 
 .hero .container p {
@@ -190,8 +192,8 @@ main {
     top: 50%;
     right: 3px;
     transform: translateY(-50%);
-    color: white; /* Arrow color */
-    font-size: 16px; /* Example font size */
+    color: white; 
+    font-size: 16px;
 }
 
 .cta-button:hover {
@@ -212,21 +214,21 @@ main {
 }
 
 .about .container2 {
-    max-width: 800px; /* Limit the width of the content */
-    margin: 0 auto; /* Center the content */
+    max-width: 800px;
+    margin: 0 auto;     
 }
 
 .about h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #000000; /* Dark gray text color */
+    color: #000000; 
 }
 
 .about p {
     font-size: 1.1rem;
     margin-bottom: 15px;
     line-height: 1.6;
-    color: #000000; /* Light gray text color */
+    color: #000000; 
 }
 
 /* Add animations */
@@ -249,7 +251,7 @@ main {
     text-align: center;
     padding: 50px 0;
     width: 85%;
-    margin: 0 auto; /* Add this line to center the section horizontally */
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,7 +302,7 @@ a.no-underline {
 
 .card h3 {
     font-size: 24px;
-    color: #080000;
+    color: #fff;
     margin-bottom: 10px;
     text-align: center; 
     font-weight: bold;
@@ -311,9 +313,9 @@ a.no-underline {
     font-size: 14px;
     margin-bottom: 30px;
     line-height: 1.5;
-    color: black;
+    color: #fff;
     font-weight: 700;
-    text-align: center; /* Center-align the paragraph */
+    text-align: center; 
 }
 
 .card button {
@@ -325,7 +327,7 @@ a.no-underline {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 0px; /* Adjust the margin-bottom value as needed */
+    margin-bottom: 0px; 
 }
 
 .card button:hover {
@@ -362,6 +364,12 @@ a.no-underline {
 
 .feedback-container h2{
     text-align: center;
+
+}
+
+.feedback-container{
+    background-image: url(images/feedback.jpg);
+    background-size: cover;
 }
 
 .w3layouts_main h3 {
@@ -530,7 +538,6 @@ i.icon_agileits {
 }
 
 
-/* // feedback-form*/
 
 
 

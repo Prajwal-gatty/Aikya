@@ -5,6 +5,10 @@
 body {
   font-size: 120%;
   background: #F8F8FF;
+  background-image: url(images/login.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 }
 
 .header {
@@ -50,6 +54,7 @@ form, .content {
   border: none;
   border-radius: 5px;
 }
+
 .error {
   width: 92%; 
   margin: 0px auto; 

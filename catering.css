@@ -149,14 +149,17 @@ h1{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(images/spices.jpg);
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(images/spices.jpg);
     background-position: center;
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.5);
     margin-top: 50px;
 }
-. .container form{
-    border: 2px solid black;
+ 
+.container form{
+    border: 1px solid black;
+    padding: 15px;
+    
 }
   
 label {
@@ -212,3 +215,16 @@ button[type="reset"] {
     cursor: pointer;
     float: right;
 }
+
+
+.error{
+    width: 92%; 
+    margin: 0px auto; 
+    padding: 10px; 
+    border: 1px solid #a94442; 
+    color: #a94442; 
+    background: #f2dede; 
+    border-radius: 5px; 
+    text-align: left;
+    }
+

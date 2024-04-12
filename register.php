@@ -16,7 +16,7 @@
 
 
 	<form method="post" action="register.php">
-		<?php include('errors.php'); ?>
+			<?php include('errors.php'); ?>
 		<div class="input-group">
 			<label>Username</label>
 			<input type="text" name="username">
@@ -34,7 +34,7 @@
 			<input type="password" name="confirm_password">
 		</div>
 		<div class="input-group">
-			<button type="submit" class="btn" name="register">Register</button>
+			<button type="submit" class="btn" name="reg_user">Register</button>
 		</div>
 		<p>
 			Already a member? <a href="login.php">Sign in</a>

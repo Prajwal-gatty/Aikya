@@ -24,7 +24,7 @@ if (isset($_GET['logout'])) {
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Welome To Aikya</h1>
+                <h1>Welcome To Aikya</h1>
                 <p>Your one-stop destination for poojas, catering, and event hosting!</p>
                 <a href="#services" class="cta-button">Explore Now</a>
             </div>
@@ -39,7 +39,7 @@ if (isset($_GET['logout'])) {
             <p>Join us at Aikya and experience the convenience, affordability, and quality that define our services.</p>
         </div>
     </section>
-    
+
     <section id="services" class="services">
         <div class="title">
             <h2>Our Services</h2>
@@ -125,34 +125,35 @@ if (isset($_GET['logout'])) {
 
     ?>
 
-<footer>
-    <div class="footer-container">
-        <div class="quick-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#feedback">Feedback</a></li>
-            </ul>
+    <footer>
+        <div class="footer-container">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Aikya. All Rights Reserved.</p>
+            </div>
+            <div class="contact-section">
+                <h3>Contact Us</h3>
+                <p>123 Main Street, City, Country</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1234567890</p>
+            </div>
         </div>
-        <div class="contact-section">
-            <h3>Contact Us</h3>
-            <p>123 Main Street, City, Country</p>
-            <p>Email: info@example.com</p>
-            <p>Phone: +1234567890</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <?php
 
     @include_once('partials/common-scripts.php');
     ?>
-<script>
-    // Show the preloader
-    
-</script>
+    <script>
+        // Show the preloader
+    </script>
 
 
 </body>

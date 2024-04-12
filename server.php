@@ -27,6 +27,12 @@ if (isset($_POST['reg_user'])) {
     array_push($errors, "The password and confirm password does not match");
   }
 
+  if (!empty($errors)) {
+    $_SESSION['errors'] = $errors;
+    header('Location: register.php');
+    exit();
+  }
+
   // first check the database to make sure 
   // a user does not already exist with the same username and/or email
   $user_check_query = "SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
@@ -71,10 +77,28 @@ if (isset($_POST['login_user'])) {
     array_push($errors, "Password is required");
   }
 
+  if (!empty($errors)) {
+    $_SESSION['errors'] = $errors;
+    header('Location: login.php');
+    exit();
+  }
+
+  
   if (count($errors) == 0) {
     $password = md5($password);
     $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     $results = mysqli_query($db, $query);
+    if (mysqli_num_rows($results) != 1) {
+      array_push($errors, "Username and password do not match");
+    }
+
+    if (!empty($errors)) {
+      $_SESSION['errors'] = $errors;
+      header('Location: login.php');
+      exit();
+    }
+  
+
     if (mysqli_num_rows($results) == 1) {
       
       $_SESSION["username"] = $username;
@@ -90,6 +114,7 @@ if (isset($_POST['login_user'])) {
       header('location: index.php');
     } else {
       array_push($errors, "Wrong username/password combination");
+      // print_r($errors);
     }
   }
 }
